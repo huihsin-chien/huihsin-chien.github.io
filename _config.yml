@@ -145,7 +145,7 @@ scholar:
   group_order: descending
   bibliography: papers.bib
   bibliography_template: bib
-  bibtex_filters: [superscript, indent]
+  bibtex_filters: [superscript]
   replace_strings: true
   join_strings: true
   details_dir: bibliography
