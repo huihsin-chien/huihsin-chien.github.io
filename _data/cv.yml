@@ -14,6 +14,16 @@ cv:
 
   sections:
     Education:
+      - institution: National University of Singapore (NUS)
+        location: Singapore
+        url: https://www.nus.edu.sg/
+        area: Exchange Student
+        studyType: Exchange
+        start_date: 2026-08
+        end_date: 2026-12
+        highlights:
+          - Semester exchange, Aug–Dec 2026
+
       - institution: National Yang Ming Chiao Tung University (NYCU)
         location: Hsinchu, Taiwan
         url: https://www.nycu.edu.tw/
@@ -22,7 +32,7 @@ cv:
         start_date: 2023-09
         end_date: present
         highlights:
-          - Sophomore — expected graduation 2027
+          - Senior — expected graduation 2027
 
     Experience:
       - company: Industrial Technology Research Institute (ITRI)
