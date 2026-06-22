@@ -238,7 +238,8 @@ external_links:
 # jekyll-minifier
 # -----------------------------------------------------------------------------
 jekyll-minifier:
-  compress_css: true
+  enabled: false
+  compress_css: false
   compress_javascript: false
 
 # -----------------------------------------------------------------------------
