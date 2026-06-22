@@ -100,7 +100,7 @@ jobs:
         run: |
           echo "base_path='${{ steps.pages.outputs.base_path }}'"
           export JEKYLL_ENV=production
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace 2>&1 | tee /tmp/jekyll-build.log
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace --verbose 2>&1 | tee /tmp/jekyll-build.log
           exit ${PIPESTATUS[0]}
       - name: List _site contents 🔍
         if: always()
