@@ -103,17 +103,18 @@ jobs:
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace 2>&1 | tee /tmp/jekyll-build.log
           exit ${PIPESTATUS[0]}
       - name: Upload build log 📋
-        if: failure()
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: jekyll-build-log
           path: /tmp/jekyll-build.log
-          retention-days: 1
+          retention-days: 3
       - name: List _site contents 🔍
         run: |
           echo "=== _site root ===" && ls -la _site/ || echo "NO _site DIRECTORY"
-          echo "=== index.html ===" && ls -la _site/index.html 2>&1 || echo "NO index.html"
+          echo "=== index.html ===" && (ls -la _site/index.html && head -5 _site/index.html) || echo "NO index.html"
           echo "=== total files ===" && find _site -type f | wc -l
+          echo "=== all files ===" && find _site -type f | head -50
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
