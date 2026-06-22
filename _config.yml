@@ -258,3 +258,37 @@ jekyll-archives:
 # tailwind config override to avoid breaking .fixed-top
 tailwind_ignore:
   - "fixed"
+
+# -----------------------------------------------------------------------------
+# Third-party libraries (CDN)
+# Required by jekyll-3rd-party-libraries gem (crashes if key is absent)
+# -----------------------------------------------------------------------------
+third_party_libraries:
+  download: false
+  fontawesome:
+    version: "7.2.0"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{version}}/css/all.min.css"
+    integrity:
+      css: ""
+  academicons:
+    version: "1.9.5"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+    integrity:
+      css: ""
+  scholar-icons:
+    version: "1.0.3"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css"
+    integrity:
+      css: ""
+  tikzjax:
+    version: "0.2.5"
+    url:
+      js: "https://cdn.jsdelivr.net/npm/tikzjax@{{version}}/tikzjax.js"
+  tocbot:
+    version: "4.32.2"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/tocbot@{{version}}/dist/tocbot.css"
+      js: "https://cdn.jsdelivr.net/npm/tocbot@{{version}}/dist/tocbot.min.js"
