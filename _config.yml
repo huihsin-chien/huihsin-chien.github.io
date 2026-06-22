@@ -176,6 +176,36 @@ serve_videos_locally: true
 # -----------------------------------------------------------------------------
 # Jekyll
 # -----------------------------------------------------------------------------
+
+include:
+  - _pages
+
+exclude:
+  - bin/
+  - docs/
+  - test/
+  - lighthouse_results/
+  - readme_preview/
+  - AGENTS.md
+  - CLAUDE.md
+  - Dockerfile
+  - LICENSE
+  - README.md
+  - package.json
+  - package-lock.json
+  - requirements.txt
+  - purgecss.config.js
+  - docker-compose.yml
+  - docker-compose-slim.yml
+  - .pre-commit-config.yaml
+  - .prettierrc
+  - .prettierignore
+  - .lycheeignore
+  - .git-blame-ignore-revs
+  - .gitattributes
+  - .gitignore
+  - .all-contributorsrc
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
