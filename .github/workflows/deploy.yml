@@ -99,7 +99,15 @@ jobs:
       - name: Build Jekyll 🏗️
         run: |
           export JEKYLL_ENV=production
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace 2>&1 | tee /tmp/jekyll-build.log
+          exit ${PIPESTATUS[0]}
+      - name: Upload build log 📋
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-build-log
+          path: /tmp/jekyll-build.log
+          retention-days: 1
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
