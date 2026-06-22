@@ -208,8 +208,7 @@ plugins:
   - al_charts
   - al_math
   - al_newsletter
-  # jekyll plugins
-  - jekyll-archives
+  # jekyll plugins (auto-loaded via :jekyll_plugins group — only list if not in that group)
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
