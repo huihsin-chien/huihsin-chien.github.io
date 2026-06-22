@@ -22,6 +22,8 @@ back_to_top: true
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
+theme: al_folio_core
+
 repo_theme_light: default
 repo_theme_dark: dark
 repo_trophies:
@@ -190,6 +192,23 @@ sass:
   style: compressed
 
 plugins:
+  # al-folio plugin ecosystem
+  - al_folio_core
+  - al_folio_distill
+  - al_folio_cv
+  - al_folio_bootstrap_compat
+  - al_icons
+  - al_cookie
+  - al_analytics
+  - al_citations
+  - al_comments
+  - al_ext_posts
+  - al_img_tools
+  - al_search
+  - al_charts
+  - al_math
+  - al_newsletter
+  # jekyll plugins
   - jekyll-archives
   - jekyll-email-protect
   - jekyll-feed
