@@ -92,10 +92,12 @@ jobs:
       - name: Configure Pages ⚙️
         id: pages
         uses: actions/configure-pages@v5
-      - name: Install and Build 🔧
+      - name: Install system deps 🔧
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+      - name: Install Python deps 🐍
+        run: pip3 install --upgrade nbconvert
+      - name: Build Jekyll 🏗️
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: Purge unused CSS 🧹
