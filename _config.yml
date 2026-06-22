@@ -245,15 +245,13 @@ jekyll-minifier:
 # jekyll-archives
 # -----------------------------------------------------------------------------
 jekyll-archives:
-  enabled: [year, tags, categories]
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
+  posts:
+    enabled: ["year", "tags", "categories"]
+    layout: archive
+    permalinks:
+      year: "/blog/:year/"
+      tags: "/blog/tag/:name/"
+      categories: "/blog/category/:name/"
 
 # tailwind config override to avoid breaking .fixed-top
 tailwind_ignore:
