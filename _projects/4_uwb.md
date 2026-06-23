@@ -136,9 +136,20 @@ This balances noise rejection and update rate (critical since computation on a l
 | Static positioning error | ≈ ±5 cm |
 | Dynamic (walking) average error | ≈ 10 cm |
 | Mapped area | 3.6 m × 3.8 m (actual: 3.6 m × 3.72 m) |
-| Competition result | 🏆 4th place — SAFMC 2025, Multi-UAV D2 category |
+| Competition result | 4th place — SAFMC 2025, Multi-UAV D2 category |
 
 Test field was the basement of Engineering Building 5 at NYCU, using Anchors A–D in a ~3.6×3.8 m quadrilateral.
+
+<div class="row">
+  <div class="col-sm-6 mt-3">
+    {% include figure.liquid path="assets/img/projects/uwb_test_field.jpg" title="UWB test field" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Anchor setup in the NYCU Engineering Building 5 basement — four tripod-mounted AmazingUWB modules define the coordinate frame</div>
+  </div>
+  <div class="col-sm-6 mt-3">
+    {% include figure.liquid path="assets/img/projects/uwb_localization_result.png" title="UWB localization result" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Localization trace of a person walking the perimeter and diagonals of the 3.6 m × 3.72 m test area — the lower-left drift is caused by Z-axis disturbance when picking up / setting down the tag</div>
+  </div>
+</div>
 
 ## Problems & Solutions
 
