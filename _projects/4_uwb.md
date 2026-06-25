@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Multi-UAV Indoor Localization (UWB)
-description: Custom UWB PCB + DS-TWR + MDS self-calibration — ±5 cm static accuracy, SAFMC 2025 4th place
+description: Custom UWB PCB + DS-TWR + MDS self-calibration — ±10 cm static accuracy, SAFMC 2025 4th place
 img: assets/img/projects/uwb_thumb.jpg
 importance: 4
 category: Research
@@ -15,7 +15,7 @@ A low-cost, self-calibrating **UWB indoor localization system** for multi-UAV co
 
 GPS fails indoors due to building occlusion. IMU and optical flow suffer from drift. Millimeter-wave, Bluetooth, and ultrasound are either expensive or imprecise. UWB offers:
 
-- **Centimeter-level accuracy** (can reach <10 cm)
+- **Centimeter-level accuracy** (±10 cm static, ≈20 cm dynamic)
 - **Strong multipath resistance** via wide spectrum (>500 MHz bandwidth)
 - **Low power, low cost** — practical for drone payloads
 - **No inter-anchor clock sync required** with DS-TWR
@@ -133,8 +133,8 @@ This balances noise rejection and update rate (critical since computation on a l
 
 | Metric | Value |
 |--------|-------|
-| Static positioning error | ≈ ±5 cm |
-| Dynamic (walking) average error | ≈ 10 cm |
+| Static positioning error | ≈ ±10 cm |
+| Dynamic (walking) average error | ≈ 20 cm |
 | Mapped area | 3.6 m × 3.8 m (actual: 3.6 m × 3.72 m) |
 | Competition result | 4th place — SAFMC 2025, Multi-UAV D2 category |
 

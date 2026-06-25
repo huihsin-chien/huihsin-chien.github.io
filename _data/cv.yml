@@ -62,7 +62,7 @@ cv:
         end_date: 2025-07
         highlights:
           - Designed AmazingUWB — custom PCB (Qorvo DW1000 + ESP32-S3) for indoor drone localization
-          - Implemented DS-TWR ranging + multilateration + Classical MDS self-calibration — <20 cm accuracy in 20×20 m
+          - Implemented DS-TWR ranging + multilateration + Classical MDS self-calibration — ±10 cm static / ≈20 cm dynamic accuracy
           - Led team to 4th place at SAFMC 2025 (Multi-UAV Collaboration category), Singapore
 
     Leadership:
