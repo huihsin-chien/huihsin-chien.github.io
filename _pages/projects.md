@@ -5,7 +5,7 @@ permalink: /projects/
 description: Robotics research and engineering projects.
 nav: true
 nav_order: 2
-display_categories: [ITRI Internship, Independent Research, Research]
+display_categories: [ITRI Internship, Research]
 horizontal: false
 ---
 

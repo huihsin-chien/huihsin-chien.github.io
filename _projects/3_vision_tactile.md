@@ -1,15 +1,13 @@
 ---
 layout: page
 title: Vision-Tactile Manipulation Policy
-description: "🚧 WIP — UMI + dual DIGIT tactile adaptation of ImplicitRDP for fragile object grasping"
-img: assets/img/projects/umi_thumb.jpg
+description: UMI + dual DIGIT tactile adaptation of ImplicitRDP for fragile object grasping
+img: assets/img/projects/umi_thumb.png
 importance: 3
-category: Independent Research
+category: Research
 ---
 
-**Jan 2026 – Present · NYCU Systems Engineering Lab (Independent Research)**
-
-> 🚧 **Work in Progress** — currently in data collection phase.
+**Jan 2026 – Present · NYCU Systems Engineering Lab**
 
 Adapting **ImplicitRDP**'s slow-fast diffusion policy architecture to use **UMI hand-held demonstrations** with synchronized **dual DIGIT tactile sensors** — targeting contact-aware grasping of fragile objects (egg, tofu, test tube).
 
@@ -35,15 +33,6 @@ Action space adapted from 19D (Flexiv impedance) → **7D (xyz + axis_angle + gr
 ## Data Collection Pipeline
 
 UMI clapperboard-analog sync: pressure spike on DIGIT → detect Δt → align GoPro video + tactile streams.
-
-<div class="row">
-  <div class="col-sm-12 mt-3">
-    <video width="100%" controls muted playsinline>
-      <source src="/assets/video/umi_gopro.mp4" type="video/mp4">
-    </video>
-    <div class="caption">UMI GoPro data collection — third-person view</div>
-  </div>
-</div>
 
 <div class="row">
   <div class="col-sm-6 mt-3">
