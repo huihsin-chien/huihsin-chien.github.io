@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Robotics Researcher · NYCU Electrical Engineering · NUS Exchange (Aug–Dec 2026)
+subtitle: Electrical Engineering at NYCU · NUS Exchange Student · Autonomous Systems and Intelligent Sensing
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>Hsinchu, Taiwan</p>
+    <p>Singapore</p>
 
 selected_papers: false
 social: true
@@ -21,12 +21,12 @@ latest_posts:
   enabled: false
 ---
 
-I'm **Lydia Chien (簡惠心)**, a senior studying Electrical Engineering at National Yang Ming Chiao Tung University (NYCU), Hsinchu, Taiwan. Starting August 2026 I'll be on exchange at the **National University of Singapore (NUS)**.
+I'm **Huihsin Chien (Lydia)**, a senior studying Electrical Engineering at National Yang Ming Chiao Tung University (NYCU), currently on exchange at the **National University of Singapore (NUS)**.
 
-My research sits at the intersection of **robot manipulation**, **tactile sensing**, and **imitation learning** — building systems that can perceive contact, collect demonstrations, and learn to handle fragile objects.
+My interests lie in **autonomous systems that must perceive, coordinate, and act under uncertainty**. I am currently exploring a conflict-aware multi-agent pathfinding framework based on sparse agent-interaction graphs and history-conditioned prediction over A* route priors. The research aims to better represent waiting behaviour and alternative routes while focusing computation on agents with likely future conflicts.
 
-I recently interned at **ITRI** (Industrial Technology Research Institute), where I built a fully autonomous warehouse picking arm (ROS 2 / MoveIt 2 / SAM2) and a VR teleoperation system (Meta Quest 2 → 7-DOF dual-arm, 97% IK success rate).
+I am also exploring **multipath-aware acoustic drone detection for urban environments**. This simulation-first project combines distributed acoustic sensing with 3D city geometry to investigate whether map-constrained fusion can associate direct and reflected observations, reject inconsistent detections, and provide explainable early-warning cues in areas with limited line of sight.
 
-In parallel, I'm running independent research on a **vision-tactile manipulation policy** — adapting ImplicitRDP's slow-fast diffusion architecture to use dual DIGIT tactile sensors with UMI hand-held demonstrations, targeting fragile object grasping (egg, tofu, test tube).
+Previously, at **ITRI** (Industrial Technology Research Institute, Taiwan), I developed an autonomous warehouse picking pipeline integrating SAM2-based perception, MoveIt 2 planning, and real-robot execution. I also built a Meta Quest 2 teleoperation system for a dual-arm robot with 7 DOF per arm and investigated **vision-tactile imitation learning** with dual DIGIT sensors for fragile-object manipulation.
 
-I also led the **NYCU Makereal Labs** (30 members) and competed at **SAFMC 2025** with a multi-UAV UWB indoor localization system (4th place).
+Beyond research, I led the 30-member **NYCU MakeReal Labs** and served as a subteam lead on a multi-UAV UWB indoor localization system. Our team placed fourth at **SAFMC 2025**.
