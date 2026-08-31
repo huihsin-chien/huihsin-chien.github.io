@@ -2,46 +2,25 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Selected robotics, aerial systems, and intelligent sensing projects.
 nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+## GitHub
 
-## GitHub users
+Explore all of my public projects on [github.com/huihsin-chien](https://github.com/huihsin-chien).
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
+## Selected repositories
 
----
+### [Vision-Tactile Manipulation Policy](https://github.com/huihsin-chien/vision-tactile-policy)
 
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
+An adaptation of ImplicitRDP using UMI demonstrations and dual DIGIT tactile sensors for contact-aware manipulation of fragile objects.
 
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
+### [Multi-UAV UWB Indoor Localization](https://github.com/huihsin-chien/multi-uav-uwb-localization)
 
----
+An indoor localization stack for multi-UAV coordination using custom UWB hardware, two-way ranging, multilateration, and ROS.
 
-{% endfor %}
-{% endif %}
-{% endif %}
+### [Tello YOLO Autonomous Landing](https://github.com/huihsin-chien/tello-yolo-autonomous-landing)
 
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}
+An autonomous drone vision system combining custom-trained YOLOv8 detection, AprilTag localization, and precision landing.

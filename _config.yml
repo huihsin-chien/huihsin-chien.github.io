@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank
-first_name: Lydia
+first_name: Huihsin
 middle_name:
 last_name: Chien
 contact_note:
@@ -76,7 +76,7 @@ og_image:
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-blog_name: Lydia Chien
+blog_name: Huihsin Chien
 blog_nav_title: blog
 blog_description: notes on robotics & research
 permalink: /blog/:year/:title/
@@ -136,7 +136,7 @@ defaults:
 # -----------------------------------------------------------------------------
 scholar:
   last_name: [Chien]
-  first_name: [Lydia, Hui-Hsin]
+  first_name: [Huihsin, Hui-Hsin, Lydia]
   style: apa
   locale: en
   sort_by: year
