@@ -35,6 +35,15 @@ Action space adapted from 19D (Flexiv impedance) → **7D (xyz + axis_angle + gr
 UMI clapperboard-analog sync: pressure spike on DIGIT → detect Δt → align GoPro video + tactile streams.
 
 <div class="row">
+  <div class="col-sm-12 mt-3">
+    <video width="100%" controls muted playsinline>
+      <source src="/assets/video/umi_gopro_web.mp4" type="video/mp4">
+    </video>
+    <div class="caption">UMI GoPro data collection — third-person view</div>
+  </div>
+</div>
+
+<div class="row">
   <div class="col-sm-6 mt-3">
     <video width="100%" controls muted playsinline>
       <source src="/assets/video/umi_tactile_left.mp4" type="video/mp4">
